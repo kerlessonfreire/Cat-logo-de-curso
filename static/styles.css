@@ -1,0 +1,154 @@
+/* ======= ESTILO GERAL ======= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #003366;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+/* ======= FORMULÁRIO DE BUSCA ======= */
+
+form[action="/"] {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    background: #003366;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00224d;
+}
+
+/* ======= CARDS DE CURSOS ======= */
+
+.curso-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 15px;
+}
+
+.curso-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.curso-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.curso-card h3 {
+    margin: 0;
+}
+
+/* ======= FAVORITOS ======= */
+
+.favorite-btn {
+    cursor: pointer;
+    font-size: 22px;
+    color: #ccc;
+    transition: 0.2s;
+}
+
+.favorite-btn.active {
+    color: gold;
+}
+
+/* ======= TABELA ADMIN ======= */
+
+.tabela-cursos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-cursos th, 
+.tabela-cursos td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.tabela-cursos th {
+    background: #003366;
+    color: white;
+}
+
+.btn-edit {
+    background: #0059b3;
+}
+
+.btn-edit:hover {
+    background: #004a99;
+}
+
+.btn-delete {
+    background: #cc0000;
+}
+
+.btn-delete:hover {
+    background: #990000;
+}
+
+/* ======= FORM ADMIN ======= */
+
+.form-admin {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.form-admin input,
+.form-admin textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+}
+
+.form-admin button {
+    background: #003366;
+}

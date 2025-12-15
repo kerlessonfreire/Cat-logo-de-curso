@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="curso-container">
+  {% if cursos %}
+    {% for curso in cursos %}
+      <div class="curso-card" data-id="{{ curso.id }}">
+        <div class="curso-header">
+          <h3>{{ curso.titulo }}</h3>
+        </div>
+
+        <p><strong>Categoria:</strong> {{ curso.categoria }}</p>
+        <p><strong>Carga horária:</strong> {{ curso.carga_horaria }}h</p>
+        <p>{{ curso.descricao }}</p>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>Nenhum curso encontrado.</p>
+  {% endif %}
+</div>
+{% endblock %}
